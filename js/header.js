@@ -1,38 +1,32 @@
-
-
+// Este script maneja la interacción del menú de navegación en la página web
 document.addEventListener('DOMContentLoaded', () => {
-    let btnMenu = document.querySelector('.navbar-mobile');
+    const btnMenu = document.querySelector('.navbar-mobile');
+    const menuBtn = document.querySelector('#menu-btn');
 
-    document.querySelector('#menu-btn').onclick = () => {
-        btnMenu.classList.toggle('active');
+    // Verifica que los elementos existan
+    if (btnMenu && menuBtn) {
+        menuBtn.addEventListener('click', () => {
+            btnMenu.classList.toggle('active'); // Alterna la clase 'active' en el menú móvil
+            menuBtn.classList.toggle('rotate-180'); // Alterna la rotación del ícono
+        });
+    } else {
+        console.error('No se encontró el elemento #menu-btn o .navbar-mobile en el DOM.');
     }
 
-    /* ROTAR ICONO */
-    $(document).ready(function () {
-        $('#menu-btn').click(function () {
-            $(this).toggleClass('rotate-180'); // Agrega o quita la clase 'rotate-180' cuando se hace clic en el ícono
-        });
-    });
-
-
+    // Manejo de enlaces en el menú principal
     const navLinks = document.querySelectorAll('.navbar li a');
-
     navLinks.forEach(link => {
         link.addEventListener('click', () => {
-            // Eliminar la clase 'active' de todos los enlaces
             navLinks.forEach(nav => nav.classList.remove('active'));
-            // Agregar la clase 'active' al enlace seleccionado
             link.classList.add('active');
         });
     });
 
+    // Manejo de enlaces en el menú móvil
     const mobileNavItems = document.querySelectorAll('.navbar-mobile ul li');
-
     mobileNavItems.forEach(item => {
         item.addEventListener('click', () => {
-            // Eliminar la clase 'active' de todos los <li>
             mobileNavItems.forEach(nav => nav.classList.remove('active'));
-            // Agregar la clase 'active' al <li> seleccionado
             item.classList.add('active');
         });
     });
