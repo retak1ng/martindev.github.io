@@ -1,0 +1,95 @@
+---
+import Layout from "../layouts/BlogPost.astro";
+---
+
+<Layout
+	title="Sobre mi"
+	description="Sobre mi"
+	pubDate={new Date("Mayo 12 2025")}
+	heroImage="/inicio.gif"
+>
+	<main>
+		<p>
+			¡Hola! mi nombre es Martín Rojas, tengo 24 años y soy de Argentina.
+			Soy un desarrollador de software apasionado por el desarrollo
+			full-stack. <br />
+			<br />
+			Actualmente estoy estudiando Ingeniería en Computación, donde he adquirido
+			una base sólida en programación, bases de datos y manejo de archivos.
+			<br />
+			<br />
+			Por mi parte, he profundizado en tecnologías web como HTML, CSS, JavaScript
+			y diversos frameworks como .NET, Angular y Astro. <br />
+			<br />
+			Mi GitHub incluye varios proyectos personales que demuestran mis habilidades
+			para construir aplicaciones web. Exploro constantemente nuevas tecnologías
+			y recursos para crear aplicaciones fluidas y escalables.
+		</p>
+		<div class="about-extra">
+			<div class="about-extra-item">
+				<h4>Educación y Certificados</h4>
+				<div class="about-extra-item-content">
+					<p>
+						<strong>Ingeniería En Computación</strong> - 2022 - En Curso
+						<br />
+						Universidad Nacional de La Plata
+						<br />
+					</p>
+					<p>
+						<strong
+							>Desarrollo de Aplicaciones en Angular 19 y ASP.NET
+							Core 9</strong
+						> - 2025
+						<br />
+						Udemy
+						<br />
+					</p>
+					<p>
+						<strong>Back End Development and APIs</strong> - 2025
+						<br />
+						freeCodeCamp
+						<br />
+					</p>
+					<p>
+						<strong
+							>Fundamentos del desarrollo web: Full Stack</strong
+						> - 2022
+						<br />
+						Linkedin LEARNING
+						<br />
+					</p>
+					<p>
+						<strong>JavaScript avanzado: Buenas prácticas</strong> -
+						2022
+						<br />
+						Linkedin LEARNING
+						<br />
+					</p>
+				</div>
+			</div>
+			<div class="about-extra-item">
+				<h4>Idiomas</h4>
+				<div>
+					<p><strong>Español</strong> - Nativo</p>
+					<p><strong>Inglés</strong> - Técnico</p>
+				</div>
+			</div>
+			<div class="about-extra-item">
+				<h4>Hobbies</h4>
+				<div>
+					<p>Futbol - Videojuegos - Musica</p>
+				</div>
+			</div>
+		</div>
+	</main>
+</Layout>
+
+<style>
+	.about-extra {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		gap: 2em;
+		justify-content: space-between;
+	}
+</style>
