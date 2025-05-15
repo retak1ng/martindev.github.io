@@ -6,7 +6,7 @@ import HeaderLink from './HeaderLink.astro';
 	<nav>
 		<div class="internal-links">
 			<HeaderLink href="/">Inicio</HeaderLink>
-			<HeaderLink href="/about">Sobre mi</HeaderLink>
+			<HeaderLink href={`${Astro.site}about`}>Sobre mi</HeaderLink>
 			<HeaderLink href="/blog">Proyectos</HeaderLink>
 			<HeaderLink href="/contact">Contacto</HeaderLink>
 		</div>
