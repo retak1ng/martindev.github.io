@@ -2,7 +2,7 @@
 title: 'Angular Películas App'
 description: 'Aplicación Web de Peliculas con Angular y ASP.NET Core'
 pubDate: 'Mar 10 2025'
-heroImage: '/AngularPeliculas.png'
+heroImage: './AngularPeliculas.png'
 ---
 
 # 🎥 
