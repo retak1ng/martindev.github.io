@@ -2,7 +2,7 @@
 title: 'Pagina Web de COAM - Carpintería de Aluminio'
 description: 'COAM es un sitio web desarrollado con Astro'
 pubDate: 'Jun 12 2024'
-heroImage: './COAM.png'
+heroImage: '/COAM.png'
 ---
 
 COAM es un sitio web desarrollado con [Astro](https://astro.build), diseñado para una empresa especializada en carpintería de aluminio. El proyecto destaca por su diseño moderno, navegación intuitiva y funcionalidades interactivas que muestran los productos y servicios de la empresa.
